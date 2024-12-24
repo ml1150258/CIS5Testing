@@ -1,5 +1,5 @@
 #include <iostream>
 using namespace std;
 int main(int argv,char **argc){
-    cout<<"Hello World with more"<<endl;
+    cout<<"Hello World"<<endl;
 }
