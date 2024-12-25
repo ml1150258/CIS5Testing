@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/marklehr/Desktop/CIS5Testing/HelloWorld/helloworld'
+relocations:     []
+...
