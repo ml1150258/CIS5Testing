@@ -5,4 +5,6 @@ int main(int argv,char **argc){
     int n;
     cin>>n;
     cout<<n<<endl;
+    cin>>n;
+    cout<<n<<endl;
 }
