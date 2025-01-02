@@ -1,0 +1,18 @@
+{
+    "terminal.explorerKind": "external",
+    "cmake.options.advanced": {
+        
+        "build": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "launch": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "debug": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        }
+    }
+}
