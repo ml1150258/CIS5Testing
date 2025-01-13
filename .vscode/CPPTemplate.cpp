@@ -21,18 +21,12 @@ int main(int argc, char** argv) {
     //Initilize Random Number Seed
     
     //Declare Variables
-    char msg[]="Hello World!";
-    string name;
 
     //Initialize Variables
-    cout<<msg<<endl;
-    cout<<"What is your name?"<<endl;
-    cin>>name;
 
     //Process/Map inputs to outputs
 
     //Output data
-    cout<<"Hello "<<name<<endl;
 
     //Exit stage right!
     return 0;
