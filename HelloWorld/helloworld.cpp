@@ -1,5 +1,5 @@
 /*
-Author:  Dr. Mark e. Lehr
+Author:  Dr. Mark E. Lehr
 Date:    
 Purpose: Template for C++ programs to be used in the course
          CSC/CIS 5.  Copied for each assignment problem
