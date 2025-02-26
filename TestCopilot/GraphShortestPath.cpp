@@ -30,6 +30,7 @@ void Graph::addEdge(int u, int v, int w) {
 void Graph::shortestPath(int src, int dest) {
     priority_queue<iPair, vector<iPair>, greater<iPair> > pq;
     vector<int> dist(V, INT_MAX);
+    vector<int> pred(V, -1); // To store the predecessor of each node
     pq.push(make_pair(0, src));
     dist[src] = 0;
 
@@ -37,18 +38,30 @@ void Graph::shortestPath(int src, int dest) {
         int u = pq.top().second;
         pq.pop();
 
-        for (auto x : adj[u]) {
+        for (iPair x: adj[u]) {
             int v = x.first;
             int weight = x.second;
 
             if (dist[v] > dist[u] + weight) {
                 dist[v] = dist[u] + weight;
                 pq.push(make_pair(dist[v], v));
+                pred[v] = u; // Set predecessor
             }
         }
     }
+    // Print shortest path
+    vector<int> path;
+    for (int v = dest; v != -1; v = pred[v])path.push_back(v);
+    reverse(path.begin(), path.end());
 
     cout << "Shortest path from " << src << " to " << dest << " is " << dist[dest] << endl;
+    cout << "Path: ";
+    for (int i = 0; i < path.size(); i++) {
+        cout << path[i];
+        if (i != path.size() - 1)
+            cout << " -> ";
+    }
+    cout << endl;
 }
 
 int main() {
