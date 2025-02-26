@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "configurations": [
         {
             "name": "C/C++: clang++ build and debug active file",
@@ -15,4 +16,11 @@
         }
     ],
     "version": "2.0.0"
+=======
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": []
+>>>>>>> 69f498072b1fb40cbae2f4039a949768ce7334a9
 }
